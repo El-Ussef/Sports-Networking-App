@@ -1,10 +1,10 @@
+using Domain.Common;
 using Domain.Enums;
 
 namespace Domain.Entities;
 
-public class Video
+public class Video : BaseEntity
 {
-    public int Id { get; set; }
     public int AthleteId { get; set; }
     public Athlete Athlete { get; set; }
     public string Title { get; set; }

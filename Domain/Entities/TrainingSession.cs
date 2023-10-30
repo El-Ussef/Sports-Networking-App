@@ -1,6 +1,8 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class TrainingSession
+public class TrainingSession : BaseEntity
 {
     public int TrainingSessionId { get; set; }
     public int? UserId { get; set; } // This can be null for anonymous bookings

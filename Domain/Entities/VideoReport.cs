@@ -1,8 +1,9 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class VideoReport
+public class VideoReport : BaseEntity
 {
-    public int Id { get; set; }
     public int VideoId { get; set; }
     public Video Video { get; set; }
     public string Reason { get; set; }

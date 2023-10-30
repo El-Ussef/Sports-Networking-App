@@ -1,7 +1,8 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class Sport
+public class Sport : BaseEntity
 {
-    public int Id { get; set; }
     public string Name { get; set; }
 }

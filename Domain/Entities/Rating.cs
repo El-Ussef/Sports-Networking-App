@@ -1,8 +1,9 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class Rating
+public class Rating : BaseEntity
 {
-    public int RatingId { get; set; }
     public int UserId { get; set; }
     //public User User { get; set; }
     public int RatedById { get; set; }

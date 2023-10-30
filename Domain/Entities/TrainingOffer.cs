@@ -1,8 +1,9 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class TrainingOffer
+public class TrainingOffer : BaseEntity
 {
-    public int Id { get; set; }
     public int CoachId { get; set; }
     public Coach Coach { get; set; }
     public string Description { get; set; }

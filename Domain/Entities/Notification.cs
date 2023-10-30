@@ -1,6 +1,8 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class Notification
+public class Notification : BaseEntity
 {
     
 }

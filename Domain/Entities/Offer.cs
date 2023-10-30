@@ -1,11 +1,11 @@
+using Domain.Common;
 using Domain.Enums;
 
 namespace Domain.Entities;
 
-public class Offer
+public class Offer : BaseEntity
 {
     //TODO: i should have a user class instead of Athlete
-    public int Id { get; set; }
     public Athlete Athlete { get; set; }
     public string Description { get; set; }
     public double Price { get; set; }

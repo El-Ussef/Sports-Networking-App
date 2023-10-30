@@ -1,12 +1,16 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class User
+public class User : BaseEntity
 {
-    public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Email { get; set; }
     public byte[] PasswordHash { get; set; }
     public byte[] PasswordSalt { get; set; }
+    public Speciality Speciality { get; set; } //Athletes,Medical and Health,Coach
+    public string JobTitle { get; set; }
     public DateTime DateCreated { get; set; }
 }
+

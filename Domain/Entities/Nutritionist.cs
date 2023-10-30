@@ -1,6 +1,8 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class Nutritionist
+public class Nutritionist :BaseEntity
 {
     
 }

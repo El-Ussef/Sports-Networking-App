@@ -9,5 +9,5 @@ public class Athlete : User
     public List<Achievement> Achievements { get; set; }
     public List<Sponsorship> Sponsorships { get; set; }
     public List<Offer> Offers { get; set; }
-    public List<Document> Documents { get; set; }
+    public List<AthleteDocument> Documents { get; set; }
 }
