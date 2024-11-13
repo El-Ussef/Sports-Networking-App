@@ -115,32 +115,32 @@ public class FileStorageService : IFileStorageService
     }
 }
 
-using FluentFTP;
+//using FluentFTP;
 
-public class FTPFileStorageService : IFileStorageService
-{
-    private readonly FTPSettings _ftpSettings;
-
-    public FTPFileStorageService(IOptions<FileStorageSettings> settings)
-    {
-        _ftpSettings = settings.Value.FTP;
-    }
-
-    public async Task<string> UploadFileAsync(IFormFile file, string directory)
-    {
-        var fileName = $"{_ftpSettings.BaseDirectory}/{directory}/{Guid.NewGuid()}_{file.FileName}";
-
-        using var ftpClient = new FtpClient(_ftpSettings.Server, _ftpSettings.Username, _ftpSettings.Password);
-        ftpClient.Connect();
-
-        using var stream = file.OpenReadStream();
-        await ftpClient.UploadAsync(stream, fileName);
-
-        return GetFileUrl(fileName, directory).Result;
-    }
-
-    public Task<string> GetFileUrl(string fileName, string directory)
-    {
-        return Task.FromResult($"ftp://{_ftpSettings.Server}/{fileName}");
-    }
-}
+// public class FTPFileStorageService : IFileStorageService
+// {
+//     private readonly FTPSettings _ftpSettings;
+//
+//     public FTPFileStorageService(IOptions<FileStorageSettings> settings)
+//     {
+//         _ftpSettings = settings.Value.FTP;
+//     }
+//
+//     public async Task<string> UploadFileAsync(IFormFile file, string directory)
+//     {
+//         var fileName = $"{_ftpSettings.BaseDirectory}/{directory}/{Guid.NewGuid()}_{file.FileName}";
+//
+//         using var ftpClient = new FtpClient(_ftpSettings.Server, _ftpSettings.Username, _ftpSettings.Password);
+//         ftpClient.Connect();
+//
+//         using var stream = file.OpenReadStream();
+//         await ftpClient.UploadAsync(stream, fileName);
+//
+//         return GetFileUrl(fileName, directory).Result;
+//     }
+//
+//     public Task<string> GetFileUrl(string fileName, string directory)
+//     {
+//         return Task.FromResult($"ftp://{_ftpSettings.Server}/{fileName}");
+//     }
+// }
