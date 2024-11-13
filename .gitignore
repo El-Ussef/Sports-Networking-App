@@ -75,3 +75,16 @@ coverage/
 *.tmp
 *.temp
 *.log
+
+# Ignore all images folders anywhere in the repository
+images/
+**/images/
+
+# Ignore specific image file types
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+
