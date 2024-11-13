@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-public class Manager : User
+public class Manager : AppUser
 {
     public string Organization { get; set; }
     public string Category { get; set; }

@@ -7,4 +7,6 @@ public class Province
     public string Label { get; set; }
 
     public Region Region { get; set; }
+
+    public List<City> Cities { get; set; }
 }

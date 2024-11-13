@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Domain.Common;
 
 public interface IEntity
@@ -12,7 +14,14 @@ public interface ITimeModification
 
 public abstract class BaseEntity<TKey> : IEntity, ITimeModification
 {
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public TKey Id { get; protected set; }
+
+    public bool? IsActive { get; set; }
+
+    public bool? IsDeleted { get; set; }
+
+    public bool? IsValid { get; set; }
 
     public override bool Equals(object obj)
     {

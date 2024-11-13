@@ -3,6 +3,9 @@ using Domain.Enums;
 
 namespace Domain.Entities;
 
+/// <summary>
+/// represent the offer that each Type of user can do (not used for now)
+/// </summary>
 public class Offer : BaseEntity
 {
     //TODO: i should have a user class instead of Athlete

@@ -4,6 +4,94 @@
     "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/CoreApi/CoreApi.csproj": {}
   },
   "projects": {
+    "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj",
+        "packagesPath": "/Users/youssefelmanssouri/.nuget/packages/",
+        "outputPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/youssefelmanssouri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj": {
+                "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Coravel": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "LanguageExt.Core": {
+              "target": "Package",
+              "version": "[4.4.7, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/CoreApi/CoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,13 +113,25 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj": {
+                "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj"
+              },
+              "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Infrastructure/Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -40,15 +140,19 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.0-rc.1.23421.29, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[8.0.0-rc.1.23421.29, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.0-rc.1.23421.29, )"
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client.Core": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             },
             "Microsoft.Identity.Web": {
               "target": "Package",
@@ -82,7 +186,196 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-rc.1.23463.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj",
+        "packagesPath": "/Users/youssefelmanssouri/.nuget/packages/",
+        "outputPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/youssefelmanssouri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/youssefelmanssouri/.nuget/packages/",
+        "outputPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/youssefelmanssouri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj": {
+                "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Application/Application.csproj"
+              },
+              "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj": {
+                "projectPath": "/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client.Core": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[6.0.24, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.2, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,5 +4,5 @@ namespace Infrastructure.Identity.Services;
 
 public class DateTimeService : IDateTimeService
 {
-    public DateTime Now { get; set; }
+    public DateTime Now { get; set; } = DateTime.UtcNow;
 }

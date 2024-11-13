@@ -1,6 +1,8 @@
+using Domain.Common;
+
 namespace Domain.Entities;
 
-public class Sponsorship
+public class Sponsorship : BaseEntity
 {
     
 }

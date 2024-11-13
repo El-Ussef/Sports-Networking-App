@@ -1,0 +1,12 @@
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/bin/Release/net8.0/Domain.deps.json
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/bin/Release/net8.0/Domain.dll
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/bin/Release/net8.0/Domain.pdb
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.AssemblyInfo.cs
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.sourcelink.json
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.dll
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/refint/Domain.dll
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/Domain.pdb
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/Domain/obj/Release/net8.0/ref/Domain.dll

@@ -1,0 +1,3 @@
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/publish/Domain.dll
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/publish/Domain.deps.json
+/Users/youssefelmanssouri/Projects/dotnet/SportsNetworkingPlatform/publish/Domain.pdb

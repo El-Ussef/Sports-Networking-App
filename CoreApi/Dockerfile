@@ -1,20 +1,12 @@
-﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+﻿# Base image
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-COPY ["CoreApi/CoreApi.csproj", "CoreApi/"]
-RUN dotnet restore "CoreApi/CoreApi.csproj"
-COPY . .
-WORKDIR "/src/CoreApi"
-RUN dotnet build "CoreApi.csproj" -c Release -o /app/build
+RUN mkdir -p /app/Images
 
-FROM build AS publish
-RUN dotnet publish "CoreApi.csproj" -c Release -o /app/publish
+# Copy build artifacts to the final image
+COPY publish/ .
 
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "CoreApi.dll"]

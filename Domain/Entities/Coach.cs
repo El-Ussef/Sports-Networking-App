@@ -1,6 +1,6 @@
 namespace Domain.Entities;
 
-public class Coach : User
+public class Coach : AppUser
 {
     public Sport Sport { get; set; }
     public string Expertise { get; set; }
